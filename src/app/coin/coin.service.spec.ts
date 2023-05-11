@@ -1,6 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { CoinService } from './services/coin.service';
 import { HttpService } from '@nestjs/axios';
+// import { response } from './mock/response';
 // import { of } from 'rxjs';
 
 describe('CoinService', () => {
@@ -31,10 +32,15 @@ describe('CoinService', () => {
 
   describe('getCoins', () => {
     it('should the coins', async () => {
-      // jest.spyOn(httpService, 'get').mockReturnValueOnce(of({}));
+      // jest
+      //   .spyOn(httpService, 'get')
+      // .mockReturnValueOnce(of({ status: 200, statusText: 'OK', config: {}, headers: {}, data: response }));
       const result = await coinService.getCoins();
       expect(result).toBeTruthy();
       expect(httpService.get).toBeCalledTimes(1);
     });
   });
 });
++56997428411;
+
+
