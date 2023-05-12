@@ -11,7 +11,7 @@
 
 ## Test it in Production:
 
-In construction.
+Open [https://5d0kyryvc8.execute-api.us-east-1.amazonaws.com/api/v1/coins](https://5d0kyryvc8.execute-api.us-east-1.amazonaws.com/api/v1/coins).
 
 ## Run local
 
